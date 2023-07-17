@@ -6,12 +6,12 @@ import { Fragment } from 'react';
 import {Dialog , Transition } from '@headlessui/react';
 import { generateCarImageUrl } from '@/utils';
 interface CarDetailsProps {
-    isOpen: boolean | undefined ; 
+    isOpen: boolean  ; 
     closeModal: ()=>void ;
-    car: CarProps | undefined  ;
+    car: CarProps   ;
 }
 
-const CarDetails = ({isOpen , closeModal , car}:CarDetailsProps | undefined ) => {
+const CarDetails = ({isOpen , closeModal , car}:CarDetailsProps  ) => {
   return (
     <>
         <Transition appear show={isOpen} as={Fragment}>
