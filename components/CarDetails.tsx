@@ -8,7 +8,7 @@ import { generateCarImageUrl } from '@/utils';
 interface CarDetailsProps {
     isOpen: boolean ; 
     closeModal: ()=>void ;
-    car?: CarProps;
+    car: CarProps;
 }
 
 const CarDetails = ({isOpen , closeModal , car}:CarDetailsProps) => {
