@@ -18,11 +18,19 @@ const Navbar = () => {
                         className="object-contain"
                     />
                 </Link>
+                <div className="navigation flex justify-between text-lg font-medium">
+                    
+
+                <Link href='/carhub' className="mx-5 hover:text-blue-500 active:text-blue-400" >Cars </Link>
+                <Link href='/blog' className="mx-5" >Blog </Link>
+                <Link href='/how-it-works' className="mx-5" >How it works  </Link>
+                <Link href='/about' className="mx-5  hover:text-blue-500 active:text-blue-400" >About  </Link>
+                </div>
 
                 <CustomButton
                     title="Sign In"
                     btnType="button"
-                    cantainerStyles="text-primary-blue rounded-full bg-white main-w-[130px]"
+                    containerStyles="text-primary-blue rounded-full bg-white main-w-[130px]"
 
                 ></CustomButton>
             </nav>

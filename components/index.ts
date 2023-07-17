@@ -6,6 +6,9 @@ import Hero from "./Hero";
 import Navbar from "./Navbar";
 import SearchBar from "./SearchBar";
 import SearchManufacturer from "./SearchManufacturer";
+import CarDetails from "./CarDetails";
+import ShowCase from "./ShowCase";
+import NewsLetter from "./NewsLetter";
 
 
 
@@ -17,7 +20,10 @@ export {
      SearchBar , 
      CustomFilter , 
      SearchManufacturer , 
-     CarCard
+     CarCard,
+     CarDetails , 
+     ShowCase,
+     NewsLetter , 
 
     
 }

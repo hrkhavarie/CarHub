@@ -1,4 +1,4 @@
-import { Footer, Navbar } from '@/components'
+import { Footer, Navbar, NewsLetter, ShowCase } from '@/components'
 import './globals.css'
 
 
@@ -17,6 +17,8 @@ export default function RootLayout({
       <body className="relative">
         <Navbar/>
         {children}
+        <ShowCase />
+        <NewsLetter />
           <Footer/>
         </body>
         
