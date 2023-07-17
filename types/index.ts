@@ -22,18 +22,18 @@ export interface SearchManufacturerProps{
 }
 
 export interface CarProps {
-city_mpg?:number,
-class?:string,
-combination_mpg?:number,
-cylinders?:number,
-displacement?:number,
-drive?:string,
-fuel_type?:string,
-highway_mpg?:number,
-make?:string,
-model?:string,
-transmission?:string , 
-year?:number ,
+city_mpg?:number | undefined,
+class?:string | undefined,
+combination_mpg?:number  | undefined,
+cylinders?:number | undefined,
+displacement?:number | undefined,
+drive?:string | undefined,
+fuel_type?:string | undefined,
+highway_mpg?:number | undefined,
+make?:string | undefined,
+model?:string | undefined,
+transmission?:string | undefined , 
+year?:number | undefined ,
 
 
 }
