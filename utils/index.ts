@@ -7,19 +7,21 @@
 // 	}
 // };
 
-import { CarProps } from "@/types";
+import { CarProps, CustomFilterProps, FilterProps } from "@/types";
 
 
 
- export async function fetchCars(){
-    const headers = {
+ export async function fetchCars(filters:FilterProps){
+    
+   const {manufacturer , year , model , fuel, limit} = filters;
+   const headers = {
        
          'X-RapidAPI-Key': 'acefbeb391mshd5023aafcfc6363p1bb226jsncd56728bc273',
 	     	'X-RapidAPI-Host': 'cars-by-api-ninjas.p.rapidapi.com'
         
     }
 
-    const response =await fetch( "https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?model=corolla" , {
+    const response =await fetch( `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&model=${model}&year=${year}&fuel_type=${fuel}&limit=${limit}` , {
         headers: headers , 
     }) ;
     const result = await response.json();
