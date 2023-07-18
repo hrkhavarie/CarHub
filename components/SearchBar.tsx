@@ -4,9 +4,6 @@ import SearchManufacturer from './SearchManufacturer'
 import { CustomButtonProps, SearchbutonProps } from '@/types'
 import Image from 'next/image'
 import { useRouter   } from 'next/navigation'
-import CustomModal, { CustomModalProps } from './CustomModal'
-import { Dialog } from '@headlessui/react'
-import CarDetails from './CarDetails'
 
  
 const SearchButton = ({otherClasses}:SearchbutonProps) => {
@@ -33,7 +30,6 @@ const SearchBar = () => {
 
   const router = useRouter()
     const [manufacturer, setManufacturer] = useState('')
-  let [isOpen, setIsOpen] = useState(true)
 
     const [model, setModel] = useState('');
     const handleSearch = (e: React.FormEvent<HTMLFormElement>)=>{
