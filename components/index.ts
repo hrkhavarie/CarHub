@@ -9,6 +9,7 @@ import SearchManufacturer from "./SearchManufacturer";
 import CarDetails from "./CarDetails";
 import ShowCase from "./ShowCase";
 import NewsLetter from "./NewsLetter";
+import ShowMore from "./ShowMore";
 
 
 
@@ -24,6 +25,7 @@ export {
      CarDetails , 
      ShowCase,
      NewsLetter , 
+     ShowMore, 
 
     
 }
