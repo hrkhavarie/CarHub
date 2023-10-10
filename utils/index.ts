@@ -22,7 +22,7 @@ import { CarProps, CustomFilterProps, FilterProps } from "@/types";
     }
 
     const response =await fetch( `https://cars-by-api-ninjas.p.rapidapi.com/v1/cars?make=${manufacturer}&model=${model}&year=${year}&fuel_type=${fuel}&limit=${limit}` , {
-        headers: headers , 
+        headers: headers 
     }) ;
     const result = await response.json();
     

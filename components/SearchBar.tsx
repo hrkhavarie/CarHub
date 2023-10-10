@@ -44,7 +44,7 @@ const SearchBar = () => {
      );
   }
 
-  const updateSearchParams =(model: string , manufacturer: string)=>{
+  const updateSearchParams =(model: string , manufacturer: string )=>{
     const searchParams = new URLSearchParams(window.location.search)
     
     if (manufacturer){
@@ -59,8 +59,8 @@ const SearchBar = () => {
 
     const newpathname = `${window.location.pathname}?${searchParams.toString()}`
 
-    router.push(newpathname)
-  
+    router.push(newpathname , {scroll: false} );
+
   }
 
 
